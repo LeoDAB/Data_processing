@@ -40,7 +40,7 @@ def extract_tvseries(dom):
         # get the rating of the serie
         rating = serie.by_tag("strong")[0].content
 
-        # get the genre of the serie and strip al white spaces
+        # get the genre of the serie and strip all white spaces
         genre = serie.by_tag("span.genre")[0].content
         genre = genre.strip()
 
