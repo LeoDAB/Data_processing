@@ -34,26 +34,34 @@ def extract_tvseries(dom):
         # get title from the serie
         title = serie.by_tag('a')[0].content
 
+        # encode with utf-8 to be able to write info into csv file
+        title = title.encode("utf-8")
+
         # get the rating of the serie
         rating = serie.by_tag("strong")[0].content
 
-        # get the genre of the serie
+        # get the genre of the serie and strip al white spaces
         genre = serie.by_tag("span.genre")[0].content
-        print genre
+        genre = genre.strip()
 
-        # get the main actors/actresses in the serie
+        # get the main actors/actresses in the serie in a csv string
+        stars = ""
+        for star in serie.by_tag('p')[2].by_tag('a'):
+            stars = stars + star.content + ', '
 
-    # div = Element('<div> <a>1st</a> <a>2nd</a> </div>')
-    # print div
-    # print div('a:first-child')
-    # print div('a:first-child')[0].source
+        # remove last comma and space and encode with utf-8 to be able to write info into csv file
+        stars = stars[:-2]
+        stars = stars.encode("utf-8")
 
-    # ADD YOUR CODE HERE TO EXTRACT THE ABOVE INFORMATION ABOUT THE
-    # HIGHEST RATED TV-SERIES
-    # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
-    # UNICODE CHARACTERS AND SIMPLY LEAVE THEM OUT OF THE OUTPUT.
+        # get the runtime of the serie
+        runtime = serie.by_tag('span.runtime')[0].content
+        runtime = runtime.split(' ', 1)[0]
 
-    return []  # replace this line as well as appropriate
+        # put all obtained info in series info list as a list
+        series.append([title, rating, genre, stars, runtime])
+
+    # return this info list to be used for the csv file
+    return series
 
 
 def save_csv(f, tvseries):
@@ -63,7 +71,9 @@ def save_csv(f, tvseries):
     writer = csv.writer(f)
     writer.writerow(['Title', 'Rating', 'Genre', 'Actors', 'Runtime'])
 
-    # ADD SOME CODE OF YOURSELF HERE TO WRITE THE TV-SERIES TO DISK
+    # write tvseries into the csv file
+    for serie in range(len(tvseries)):
+        writer.writerow(tvseries[serie])
 
 if __name__ == '__main__':
     # Download the HTML file
