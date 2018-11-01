@@ -27,6 +27,18 @@ def extract_movies(dom):
     - Runtime (only a number!)
     """
 
+    # Empty list to hold information about the highest rated movies
+    HighestRated = []
+
+    # start iterating over each movie
+
+   # get all the movie titles
+    data = [title.text for title in dom.select("h3 a")]
+    print(data)
+
+
+
+
     # ADD YOUR CODE HERE TO EXTRACT THE ABOVE INFORMATION ABOUT THE
     # HIGHEST RATED MOVIES
     # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
@@ -91,3 +103,5 @@ if __name__ == "__main__":
     # write the CSV file to disk (including a header)
     with open(OUTPUT_CSV, 'w', newline='') as output_file:
         save_csv(output_file, movies)
+
+
