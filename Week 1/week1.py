@@ -30,19 +30,35 @@ def extract_movies(dom):
     # Empty list to hold information about the highest rated movies
     HighestRated = []
 
-    # start iterating over each movie
+    # search only in the div with useful movie information
+    result = dom.find("div", {"class":"lister-list"})
 
-   # get all the movie titles
-    data = [title.text for title in dom.select("h3 a")]
-    print(data)
+    # get movie titles
+    titles = [title.text for title in result.select("h3 a")]
+    print(titles)
 
+    # get movie ratings
+    ratings = [rating.text for rating in result.select("strong")]
+    print(ratings)
 
+    # get year of release in numbers only
+    release = [release.text.strip('()I ') for release in
+               result.find_all("span", {"class": "lister-item-year text-muted unbold"})]
+    print(release)
 
+    # get stars
+    stars = []
+    for movie in result.find_all("div", {"class":"lister-item-content"}):
+        moviestar = [star.text for star in movie.select("a[href*=_st_]")]
+        stars.append(moviestar)
+    print(stars)
 
-    # ADD YOUR CODE HERE TO EXTRACT THE ABOVE INFORMATION ABOUT THE
-    # HIGHEST RATED MOVIES
-    # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
-    # UNICODE CHARACTERS AND SIMPLY LEAVE THEM OUT OF THE OUTPUT.
+    # get run time
+    runTime = [runTime.text.strip('min ') for runTime in result.find_all("span", {"class": "runtime"})]
+    print(runTime)
+
+    # list of lists with movie information
+
 
     return []   # REPLACE THIS LINE AS WELL IF APPROPRIATE
 
