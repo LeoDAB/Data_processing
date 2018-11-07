@@ -77,7 +77,6 @@ def read_csv():
 
 
 if __name__ == "__main__":
-
     # add the necessary data to the global dictionary
     read_csv()
 
