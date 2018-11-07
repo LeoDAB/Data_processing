@@ -7,15 +7,16 @@ This script visualizes data obtained from a .csv file
 import csv
 import matplotlib.pyplot as plt
 
-# Global constants for the input file, first and last year
+# global constants for the input file, first and last year
 INPUT_CSV = "movies.csv"
 START_YEAR = 2008
 END_YEAR = 2018
 
-# Global dictionary for the data
+# global dictionary for the data
 data_dict = {str(key): [] for key in range(START_YEAR, END_YEAR)}
 
 
+<<<<<<< HEAD
 def read_csv():
     """
     read input movies.csv and save the rating values per year in the global dictionary
@@ -49,11 +50,36 @@ def movielist(dictionary):
 
     # year input for graph has to be a list
     year = list(data_dict.keys())
+=======
+def average(dict):
+    """
+    calculate the average ratings and save them in the global dictionary. The method that is used is explained at:
+    https://stackoverflow.com/questions/30687244/python-3-4-how-to-get-the-average-of-dictionary-values
+    :param dictionary: dictionary with values that need to be averaged
+    :return: updated global dictionary
+    """
+    for year, ratings in data_dict.items():
+        data_dict[year] = round(sum(ratings) / float(len(ratings)), 2)
+
+    return data_dict
+
+def get_lists(dict):
+    """
+    Split a dictionary into two separate lists for keys and values
+    :param dictionary: the dictionary that needs to be split into two separate lists
+    :return: two seperate lists for the keys and values as year and rating
+    """
+    year = list(data_dict.keys())
+    rating = list(data_dict.values())
+
+    return year, rating
+>>>>>>> ba41b91ee3949a6aa88dcebc736843c442b8617b
 
     return year, average
 
 def plotting(x, y):
     """
+<<<<<<< HEAD
     plot a graph to visualize the data and see which years had better movies on average
     :return:
     """
@@ -65,12 +91,62 @@ def plotting(x, y):
 
     plt.show()
 
-if __name__ == "__main__":
+=======
+    Plot a graph using matplotlib
+    :param x: list for x-axis values
+    :param y: list for y-axis values
+    """
+    # plot a graph
+    plt.plot(x, y, 'bs-', )
 
+    # ad textual information
+    plt.ylabel('average rating')
+    plt.xlabel('year')
+    plt.title('IMBD 50 highest rated movies 2008 until 2018: the average rating per year')
+
+    # annotate the year with the highest average rating
+    ymax = max(y)
+    xmax = x[y.index(ymax)]
+    plt.annotate("2016: year with greatest movies", fontsize=8, color='purple',
+                 xy=(xmax, ymax), xytext=(5.5, ymax + 0.0065))
+
+    # show plot
+    plt.show()
+
+def read_csv():
+    """
+    read input movies.csv and save the rating values per year in the global dictionary
+    """
+    # read the csv file as a dictionary
+    with open(INPUT_CSV, newline='') as moviefile:
+        reader = csv.DictReader(moviefile)
+
+        # add the ratings to the value list of a corresponding year in data_dict
+        for row in reader:
+            data_dict[row['Year']].append(float(row['Rating']))
+
+
+>>>>>>> ba41b91ee3949a6aa88dcebc736843c442b8617b
+if __name__ == "__main__":
+    # add the necessary data to the global dictionary
+    read_csv()
+
+    # calculate the average movie rating per year
+    average(data_dict)
+
+    # create the lists needed for a plot
+    year, rating = get_lists(data_dict)
+
+    # plot average rating against the years
+    plotting(year, rating)
+
+<<<<<<< HEAD
     read_csv()
     year, average = lists(data_dict)
 
     plotting(year, average)
 
 
+=======
+>>>>>>> ba41b91ee3949a6aa88dcebc736843c442b8617b
 
