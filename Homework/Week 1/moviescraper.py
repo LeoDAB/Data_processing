@@ -27,7 +27,7 @@ def extract_movies(dom):
     - Runtime (only a number!)
     """
 
-    # Empty list to hold information about the highest rated movies
+    # empty list to hold information about the highest rated movies
     movies = []
 
     # iterate over the movies
