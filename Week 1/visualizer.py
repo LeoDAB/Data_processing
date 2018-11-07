@@ -15,19 +15,27 @@ END_YEAR = 2018
 # Global dictionary for the data
 data_dict = {str(key): [] for key in range(START_YEAR, END_YEAR)}
 
-# read the csv file as a dictionary
-with open(INPUT_CSV, newline='') as moviefile:
-    reader = csv.DictReader(moviefile)
 
-    # add the ratings to the value list of a corresponding year in data_dict
-    for row in reader:
-        data_dict[row['Year']].append(row['Rating'])
+def read_csv():
+    """
+    read input movies.csv and save the rating values per year in the global dictionary
+    """
+    # read the csv file as a dictionary
+    with open(INPUT_CSV, newline='') as moviefile:
+        reader = csv.DictReader(moviefile)
 
-    # input for graph has to be a list
-    year = list(data_dict.keys())
-    print(year)
+        # add the ratings to the value list of a corresponding year in data_dict
+        for row in reader:
+            data_dict[row['Year']].append(float(row['Rating']))
 
+def movielist(dictionary):
+    """
+    Create a list for the keys and the values
+    :param dictionary: dictionary that needs to be split into two seperate lists
+    :return: seperate lists as year and average
+    """
 
+    # calculate the average rating per year
     ratings = list(data_dict.values())
     ratings = [[float(value) for value in list] for list in ratings]
     average = []
@@ -38,23 +46,31 @@ with open(INPUT_CSV, newline='') as moviefile:
         avgRating = round(avgRating / float(len(ratings[list])), 1)
         average.append(avgRating)
     print(average)
-   # avrating = []
-    #for list in ratings:
-     #   avrating = avrating.append(sum(float(list)) / float(len(list)))
 
-    #for key, value in data_dict.items():
-     #   avgRating[key] = sum(float(value)) / float(len(value))
+    # year input for graph has to be a list
+    year = list(data_dict.keys())
 
+    return year, average
 
-
+def plotting(x, y):
+    """
+    plot a graph to visualize the data and see which years had better movies on average
+    :return:
+    """
     # plot a graph
-    plt.plot(year, average, 'rs-',)
+    plt.plot(x, y, 'bs-',)
     plt.ylabel('average rating')
     plt.xlabel('year')
     plt.title('The average rating of movies for a year between 2007 and 2017')
-    
+
+    plt.show()
+
 if __name__ == "__main__":
 
-    print(data_dict)
+    read_csv()
+    year, average = lists(data_dict)
 
-plt.show()
+    plotting(year, average)
+
+
+
