@@ -22,6 +22,8 @@ def average(dict):
     :param dictionary: dictionary with values that need to be averaged
     :return: updated global dictionary
     """
+    
+    # calculate averages
     for year, ratings in data_dict.items():
         data_dict[year] = round(sum(ratings) / float(len(ratings)), 2)
 
@@ -34,6 +36,7 @@ def get_lists(dict):
     :param dictionary: the dictionary that needs to be split into two separate lists
     :return: two seperate lists for the keys and values as year and rating
     """
+    # create the lists
     year = list(data_dict.keys())
     rating = list(data_dict.values())
 
