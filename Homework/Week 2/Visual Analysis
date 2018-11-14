@@ -1,0 +1,6 @@
+Visually analyzing the histogram for GDP in central tendancy, it became clear that an outlier was distorting the shape of the initial
+histogram. The outlier is the GDP for Suriname which according to the data is 400000. A quick google search will show that this is not 
+the actual GDP of Suriname. According to Google - searching for: GDP suriname per capita - the GDP per capita is approximately 5900. 
+The method to determine the outlier is based on the first method from this document:
+https://docs.oracle.com/cd/E40248_01/epm.1112/cb_statistical/frameset.htm?ch07s02s10s01.html
+In the second subplot therefore zooms in on the range 0 to the maximum GDP excluding the outlier which is: 55100, the GDP from Luxembourg.
