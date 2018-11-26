@@ -7,9 +7,73 @@
 </head>
 <body>
     <script type="text/javascript">
+        var width = 400,
+            height = 200,
+            barPad = 1;
+        var country = []
+        var KTOE = []
+        var energy = []
+
+        // add text to page
         d3.select("title").text("Bar chart for data processing");
         d3.select("body").append("b").text("My bar chart");
         d3.select("body").append("p").text("Name: Leonie, student number: 10898050");
+
+
+        // import the data
+        d3.json("data.json").then(function(data) {
+            Object.keys(data).forEach(function(key) {
+                country.push(key)
+                KTOE.push(data[key]["KTOE"])
+                energy.push(data[key]["PC_PRYENRGSUPPLY"])
+            });
+
+            // create a scalable vector graphic
+            var svg = d3.select("body")
+                      .append("svg")
+                      .attr("width", width)
+                      .attr("height", height);
+
+            // create a scales
+            var xScale = d3.scaleLinear()
+                     .domain([0, d3.max(KTOE, function(d) { return d[0]; })])
+                     .range([0, width]);
+
+            var yScale = d3.scaleLinear()
+                     .domain([0, d3.max(KTOE, function(d) { return d[1]; })])
+                     .range([0, height]);
+
+            // create the bars for each mean value KTOE
+            var rects = svg.selectAll("rect")
+                     .data(KTOE)
+                     .enter()
+                     .append("rect")
+                     .attr("x", function(d, i) {
+                          return i * (width / KTOE.length); })
+                     .attr("y", function(d) {
+                          return height - (d/100); })
+                     .attr("width", width / KTOE.length - barPad)
+                     .attr("height", function(d) {
+                          return (d/100); });
+
+            //.attr("x", function(d, i) {
+            //    return xScale(i); })
+            //.attr("y", function(d) {
+            //    return yScale(d); })
+            //.attr("width", width / KTOE.length - barPad)
+            //.attr("height", function(d) {
+            //    return height - yScale(d); });
+
+        });
+
+
+
+
     </script>
+
+
+
 </body>
 </html>
+
+
