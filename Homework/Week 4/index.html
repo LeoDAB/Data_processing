@@ -7,12 +7,15 @@
 </head>
 <body>
     <script type="text/javascript">
-        var width = 400,
-            height = 200,
-            barPad = 1;
-        var country = []
-        var KTOE = []
-        var energy = []
+        var width = 500,
+            height = 400,
+            barPad = 1,
+            yPad = 30,
+            xPad = 20;
+
+        var country = [],
+            KTOE = [],
+            energy = [];
 
         // add text to page
         d3.select("title").text("Bar chart for data processing");
@@ -34,36 +37,39 @@
                       .attr("width", width)
                       .attr("height", height);
 
-            // create a scales
+            // create scales
             var xScale = d3.scaleLinear()
-                     .domain([0, d3.max(KTOE, function(d) { return d[0]; })])
-                     .range([0, width]);
+                     .domain([0, energy.length])
+                     .range([yPad, width]);
 
             var yScale = d3.scaleLinear()
-                     .domain([0, d3.max(KTOE, function(d) { return d[1]; })])
-                     .range([0, height]);
+                     .domain([d3.min(energy),d3.max(energy)])
+                     .range([height, xPad]);
 
-            // create the bars for each mean value KTOE
-            var rects = svg.selectAll("rect")
-                     .data(KTOE)
-                     .enter()
-                     .append("rect")
-                     .attr("x", function(d, i) {
-                          return i * (width / KTOE.length); })
-                     .attr("y", function(d) {
-                          return height - (d/100); })
-                     .attr("width", width / KTOE.length - barPad)
-                     .attr("height", function(d) {
-                          return (d/100); });
+            var xAxis = d3.axisBottom(xScale);
 
-            //.attr("x", function(d, i) {
-            //    return xScale(i); })
-            //.attr("y", function(d) {
-            //    return yScale(d); })
-            //.attr("width", width / KTOE.length - barPad)
-            //.attr("height", function(d) {
-            //    return height - yScale(d); });
+            var yAxis = d3.axisLeft(yScale);
 
+            // create the bars for each mean value energy
+            svg.selectAll("rect")
+               .data(energy)
+               .enter()
+               .append("rect")
+               .attr("x", function(d, i) {
+                   return xScale(i); })
+               .attr("y", function(d) {
+                   return height - yScale(d); })
+               .attr("width", width / energy.length - barPad)
+               .attr("height", function(d) {
+                   return yScale(d); });
+
+            svg.append("g")
+            .attr("transform", "translate(0," + (height - xPad) + ")")
+            .call(xAxis);
+
+            svg.append("g")
+            .attr("transform", "translate(" + yPad + ",0)")
+            .call(yAxis);
         });
 
 
