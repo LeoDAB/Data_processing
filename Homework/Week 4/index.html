@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <title>D3 test</title>
     <script type="text/javascript" src="d3/d3.js"></script>
+    <style>
+        .bar {
+            fill: steelblue;
+            }
+
+        .bar:hover {
+            fill: brown;
+        }
+    </style>
 </head>
 <body>
     <script type="text/javascript">
-        var width = 500,
+        var width = 600,
             height = 400,
             barPad = 1,
-            yPad = 30,
+            yPad = 20,
             xPad = 20;
 
         var country = [],
@@ -22,6 +31,16 @@
         d3.select("body").append("b").text("My bar chart");
         d3.select("body").append("p").text("Name: Leonie, student number: 10898050");
 
+        /*
+        The general idea of how I created the bar chart is based on this web page
+        https://bl.ocks.org/Golodhros/6f8e6d1792416ee3770ff4ddd5c9594e
+        */
+
+        // create a scalable vector graphic
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
 
         // import the data
         d3.json("data.json").then(function(data) {
@@ -31,12 +50,6 @@
                 energy.push(data[key]["PC_PRYENRGSUPPLY"])
             });
 
-            // create a scalable vector graphic
-            var svg = d3.select("body")
-                      .append("svg")
-                      .attr("width", width)
-                      .attr("height", height);
-
             // create scales
             var xScale = d3.scaleLinear()
                      .domain([0, energy.length])
@@ -44,7 +57,10 @@
 
             var yScale = d3.scaleLinear()
                      .domain([d3.min(energy),d3.max(energy)])
-                     .range([height, xPad]);
+                     .range([height-xPad, 0]);
+
+            console.log(d3.min(energy));
+            console.log(d3.max(energy));
 
             var xAxis = d3.axisBottom(xScale);
 
@@ -58,18 +74,21 @@
                .attr("x", function(d, i) {
                    return xScale(i); })
                .attr("y", function(d) {
-                   return height - yScale(d); })
+                   return height - yScale(d) - yPad; })
                .attr("width", width / energy.length - barPad)
                .attr("height", function(d) {
                    return yScale(d); });
 
+            // create x axis
             svg.append("g")
             .attr("transform", "translate(0," + (height - xPad) + ")")
             .call(xAxis);
 
+            // create y axis
             svg.append("g")
-            .attr("transform", "translate(" + yPad + ",0)")
+            .attr("transform", "translate(" + yPad + ")")
             .call(yAxis);
+
         });
 
 
