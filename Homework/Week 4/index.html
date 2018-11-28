@@ -1,3 +1,11 @@
+<!--
+Leonie Bouma
+10898050
+sources
+Interactivity: https://bl.ocks.org/alandunning/274bf248fd0f362d64674920e85c1eb7
+Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,37 +14,51 @@
     <script type="text/javascript" src="d3/d3.js"></script>
     <style>
         .bar {
-            fill: steelblue;
+            fill: hotpink;
             }
 
         .bar:hover {
-            fill: brown;
+            fill: yellow;
+        }
+        .toolTip {
+            position: absolute;
+            display: none;
+            min-width: 80px;
+            height: auto;
+            background: none repeat scroll 0 0 #ffffff;
+            border: 2px solid #FF7A33;
+            padding: 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <script type="text/javascript">
-        var width = 600,
-            height = 400,
-            barPad = 1,
-            yPad = 20,
-            xPad = 20;
+        var width = 800,
+            height = 500,
+            barPad = 2,
+            yPad = 50,
+            xPad = 45;
 
         var country = [],
             KTOE = [],
             energy = [];
 
         // add text to page
-        d3.select("title").text("Bar chart for data processing");
-        d3.select("body").append("b").text("My bar chart");
+        d3.select("title").text("Renewable energy %");
+        d3.select("body").append("b").text("Bar chart visualizing the mean percentage of renewable energy in the total primary energy supply.");
         d3.select("body").append("p").text("Name: Leonie, student number: 10898050");
 
-    
+
         // create a scalable vector graphic
         var svg = d3.select("body")
             .append("svg")
             .attr("width", width)
             .attr("height", height);
+
+        var tooltip = d3.select("body")
+            .append("div")
+            .attr("class", "toolTip");
 
         // import the data
         d3.json("data.json").then(function(data) {
@@ -53,47 +75,69 @@
 
             var yScale = d3.scaleLinear()
                      .domain([d3.min(energy),d3.max(energy)])
-                     .range([height-xPad, 0]);
+                     .range([10, height - xPad]);
 
-            console.log(d3.min(energy));
-            console.log(d3.max(energy));
-
-            var xAxis = d3.axisBottom(xScale);
+            var xAxis = d3.axisBottom(xScale).ticks(0);
 
             var yAxis = d3.axisLeft(yScale);
 
-            // create the bars for each mean value energy
+            // create the rectangles representing the mean values of renewable energy %
             svg.selectAll("rect")
                .data(energy)
                .enter()
+               .append("g")
+               .attr("class", "bars")
                .append("rect")
+               .attr("class", "bar")
+
+               // calculate position and height of each bar for a data value
                .attr("x", function(d, i) {
                    return xScale(i); })
                .attr("y", function(d) {
-                   return height - yScale(d) - yPad; })
+                   return height - yScale(d) - xPad; })
                .attr("width", width / energy.length - barPad)
                .attr("height", function(d) {
-                   return yScale(d); });
+                   return yScale(d); })
+
+               // show data value while hovering over a bar
+               .on("mousemove", function(d){
+                    tooltip
+                      .style("left", d3.event.pageX - 50 + "px")
+                      .style("top", d3.event.pageY - 70 + "px")
+                      .style("display", "inline-block")
+                      .html(Math.round(d * 100) / 100 + " %");
+                })
+    		    .on("mouseout", function(d){ tooltip.style("display", "none")
+    		    ;});
+
+            // display the according country underneath each bar
+            var counter = -1;
+            var textCounter = -1;
+
+            svg.selectAll(".bars")
+            .append("text")
+            .attr("class", "label")
+            .attr('transform', 'rotate(90)')
+            .attr("y", function(d) { counter++; return  - xScale(counter) - barPad })
+            .attr("x", height - xPad)
+            .text(function(d) { textCounter++; return country[textCounter]; });
 
             // create x axis
             svg.append("g")
-            .attr("transform", "translate(0," + (height - xPad) + ")")
-            .call(xAxis);
+                .attr("transform", "translate(0," + (height - xPad) + ")")
+                .call(xAxis);
 
             // create y axis
             svg.append("g")
             .attr("transform", "translate(" + yPad + ")")
-            .call(yAxis);
-
+            .call(yAxis)
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -yPad / 2)
+            .attr("x", -height / 3)
+            .text(" mean percentage (%) of renewable energy");
         });
-
-
-
-
     </script>
-
-
-
 </body>
 </html>
 
