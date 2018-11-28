@@ -21,6 +21,13 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
             fill: yellow;
         }
 
+        .footer {
+            position: fixed;
+            text-align: left;
+            bottom: 0px;
+            width: 100%;
+        }
+
         .toolTip {
             position: absolute;
             display: none;
@@ -38,9 +45,12 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
         // add text to page
         d3.select("title").text("Renewable energy %");
         d3.select("body").append("b")
-            .text("Bar chart visualizing the mean percentage of renewable energy in the total primary energy supply.");
+            .text("Bar chart visualizing the mean percentage (1960 - 2016) of renewable energy in the total primary energy supply per country.");
         d3.select("body").append("p")
             .text("Name: Leonie (10898050)");
+        d3.select("body").append("p")
+            .attr("class", "footer")
+            .text("data source:  https://data.oecd.org/energy/renewable-energy.htm#indicator-chart");
 
         var width = 800,
             height = 500,
