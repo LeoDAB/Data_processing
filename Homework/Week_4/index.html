@@ -34,6 +34,13 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
 </head>
 <body>
     <script type="text/javascript">
+        // add text to page
+        d3.select("title").text("Renewable energy %");
+        d3.select("body").append("b")
+            .text("Bar chart visualizing the mean percentage of renewable energy in the total primary energy supply.");
+        d3.select("body").append("p")
+            .text("Name: Leonie, student number: 10898050");
+
         var width = 800,
             height = 500,
             barPad = 2,
@@ -44,23 +51,18 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
             KTOE = [],
             energy = [];
 
-        // add text to page
-        d3.select("title").text("Renewable energy %");
-        d3.select("body").append("b").text("Bar chart visualizing the mean percentage of renewable energy in the total primary energy supply.");
-        d3.select("body").append("p").text("Name: Leonie, student number: 10898050");
-
-
-        // create a scalable vector graphic
+        // Add a scalable vector graphic for the visualisation
         var svg = d3.select("body")
             .append("svg")
             .attr("width", width)
             .attr("height", height);
 
+        // Create the tooltip
         var tooltip = d3.select("body")
             .append("div")
             .attr("class", "toolTip");
 
-        // import the data
+        // import and parse the data
         d3.json("data.json").then(function(data) {
             Object.keys(data).forEach(function(key) {
                 country.push(key)
@@ -68,18 +70,18 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
                 energy.push(data[key]["PC_PRYENRGSUPPLY"])
             });
 
-            // create scales
+            // create scales for the data
             var xScale = d3.scaleLinear()
                      .domain([0, energy.length])
                      .range([yPad, width]);
 
             var yScale = d3.scaleLinear()
                      .domain([d3.min(energy),d3.max(energy)])
-                     .range([10, height - xPad]);
+                     .range([height - xPad, 0]);
 
-            var xAxis = d3.axisBottom(xScale).ticks(0);
-
-            var yAxis = d3.axisLeft(yScale);
+            // create the axis functions
+            var xAxis = d3.axisBottom(xScale).ticks(0),
+                yAxis = d3.axisLeft(yScale);
 
             // create the rectangles representing the mean values of renewable energy %
             svg.selectAll("rect")
@@ -94,10 +96,10 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
                .attr("x", function(d, i) {
                    return xScale(i); })
                .attr("y", function(d) {
-                   return height - yScale(d) - xPad; })
+                   return yScale(d); })
                .attr("width", width / energy.length - barPad)
                .attr("height", function(d) {
-                   return yScale(d); })
+                   return height - xPad - yScale(d); })
 
                // show data value while hovering over a bar
                .on("mousemove", function(d){
@@ -122,19 +124,21 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
             .attr("x", height - xPad)
             .text(function(d) { textCounter++; return country[textCounter]; });
 
-            // create x axis
+            // display the x and y axis on the svg
             svg.append("g")
                 .attr("transform", "translate(0," + (height - xPad) + ")")
                 .call(xAxis);
 
-            // create y axis
             svg.append("g")
             .attr("transform", "translate(" + yPad + ")")
             .call(yAxis)
+
+            // add y axis label
             .append("text")
             .attr("transform", "rotate(-90)")
             .attr("y", -yPad / 2)
             .attr("x", -height / 3)
+            .attr("fill", "black")
             .text(" mean percentage (%) of renewable energy");
         });
     </script>
