@@ -20,6 +20,7 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
         .bar:hover {
             fill: yellow;
         }
+
         .toolTip {
             position: absolute;
             display: none;
@@ -124,22 +125,28 @@ Data: https://data.oecd.org/energy/renewable-energy.htm#indicator-chart
             .attr("x", height - xPad)
             .text(function(d) { textCounter++; return country[textCounter]; });
 
-            // display the x and y axis on the svg
+            // display the x axis
             svg.append("g")
                 .attr("transform", "translate(0," + (height - xPad) + ")")
-                .call(xAxis);
+                .call(xAxis)
+                .append("text")
+                .attr("y", xPad - 5)
+                .attr("x", width / 2)
+                .attr("fill", "black")
+                .text("Country");
 
+            // display the y axis
             svg.append("g")
-            .attr("transform", "translate(" + yPad + ")")
-            .call(yAxis)
+                .attr("transform", "translate(" + yPad + ")")
+                .call(yAxis)
 
-            // add y axis label
-            .append("text")
-            .attr("transform", "rotate(-90)")
-            .attr("y", -yPad / 2)
-            .attr("x", -height / 3)
-            .attr("fill", "black")
-            .text(" mean percentage (%) of renewable energy");
+                // add y axis label
+                .append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", -yPad / 2)
+                .attr("x", -height / 3)
+                .attr("fill", "black")
+                .text("Mean percentage (%) of renewable energy");
         });
     </script>
 </body>
