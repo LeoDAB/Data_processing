@@ -12,11 +12,26 @@ Student number: 10898050
     <title>Scatter plot</title>
 </head>
 <body>
-    <h3>This page does something</h3>
     <p>Name: Leonie Bouma <br> Student number: 10898050</p>
+    <h3>Creating a scatter plot using d3</h3>
+    <p>
+        Via this scatter plot you gain a general idea about the correlation between percentage of female researchers and consumer confidence for six countries. <br>
+        More precisely for the countries: France, Germany, Korea, the Netherlands, Portugal and the United Kingdom. The time period is 2007 - 2015. Logically <br>
+        the percentage of female researchers is based on the total headcount of researchers in a country. For consumer confidence a number below 100 represents <br>
+        a pessimistic outlook on the future economic situation which may result in more saving and less consuming and vice versa for a number above 100. Since <br>
+        you can basically draw an imaginary straight line (without a slope) through each scatter plot I assume there isn't any correlation between the two variables <br>
+        However, adding a regression line and calculating R squared would better support this assumption than just eyeballing the graphs. The general basis of how <br>
+        this scatter plot is build using d3 v5 and javascript is explained in these online examples:
+        <a href="https://bl.ocks.org/Jverma/076377dd0125b1a508621441752735fc"> Scatter plot</a> and
+        <a href="https://bl.ocks.org/jalapic/be485f24c4cefb3f0b68f2943364c93d"> Interactivity </a>
+    </p>
+    <div>
+        <br>
+        <select id="menu"></select>
+    </div>
     <div class="chart"></div>
 
-    <div style="position: absolute; bottom: 0px">
+    <div style="position: absolute; bottom: -180px">
         <h6>
             Data sources:  <br>
             https://data.mprog.nl/course/10%20Homework/100%20D3%20Scatterplot/datasets/consconf.json <br>

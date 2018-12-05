@@ -3,6 +3,26 @@ Name: Leonie Bouma
 Student number: 10898050
 */
 
-#selector {
-			margin-left: 50px;
-		}
+#menu {
+			margin-left: 20px;
+}
+
+.axis line {
+                fill: none;
+                stroke: black;
+                shape-rendering: crispEdges;
+}
+
+.label {
+            fill: black;
+}
+
+.point {
+            r: 4.5px
+}
+
+.title {
+            fill: black;
+            font-size: 14px;
+            font-weight: bold;
+}
