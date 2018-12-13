@@ -1,0 +1,126 @@
+﻿"LOCATION","Country","INDICATOR","Indicator","MEASURE","Measure","INEQUALITY","Inequality","Unit Code","Unit","PowerCode Code","PowerCode","Reference Period Code","Reference Period","Value","Flag Codes","Flags"
+"AUT","Austria","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,72,,
+"BEL","Belgium","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,62,,
+"CZE","Czech Republic","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,72,,
+"DNK","Denmark","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,75,,
+"FIN","Finland","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,69,,
+"FRA","France","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,65,,
+"DEU","Germany","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,75,,
+"GRC","Greece","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,52,,
+"HUN","Hungary","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,67,,
+"ISL","Iceland","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,86,,
+"IRL","Ireland","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,65,,
+"ITA","Italy","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,57,,
+"LUX","Luxembourg","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,66,,
+"NLD","Netherlands","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,75,,
+"NOR","Norway","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,74,,
+"POL","Poland","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,65,,
+"PRT","Portugal","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,65,,
+"SVK","Slovak Republic","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,65,,
+"ESP","Spain","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,60,,
+"SWE","Sweden","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,76,,
+"CHE","Switzerland","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,80,,
+"GBR","United Kingdom","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,74,,
+"EST","Estonia","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,72,,
+"LVA","Latvia","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,69,,
+"SVN","Slovenia","JE_EMPL","Employment rate","L","Value","TOT","Total","PC","Percentage","0","Units",,,66,,
+"AUT","Austria","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,75,,
+"BEL","Belgium","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,66,,
+"CZE","Czech Republic","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,79,,
+"DNK","Denmark","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,78,,
+"FIN","Finland","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,71,,
+"FRA","France","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,68,,
+"DEU","Germany","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,78,,
+"GRC","Greece","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,61,,
+"HUN","Hungary","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,73,,
+"ISL","Iceland","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,89,,
+"IRL","Ireland","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,70,,
+"ITA","Italy","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,66,,
+"LUX","Luxembourg","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,71,,
+"NLD","Netherlands","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,80,,
+"NOR","Norway","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,76,,
+"POL","Poland","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,71,,
+"PRT","Portugal","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,68,,
+"SVK","Slovak Republic","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,71,,
+"ESP","Spain","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,66,,
+"SWE","Sweden","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,78,,
+"CHE","Switzerland","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,84,,
+"GBR","United Kingdom","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,79,,
+"EST","Estonia","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,76,,
+"LVA","Latvia","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,70,,
+"SVN","Slovenia","JE_EMPL","Employment rate","L","Value","MN","Men","PC","Percentage","0","Units",,,69,,
+"AUT","Austria","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,68,,
+"BEL","Belgium","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,58,,
+"CZE","Czech Republic","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,64,,
+"DNK","Denmark","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,72,,
+"FIN","Finland","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,68,,
+"FRA","France","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,61,,
+"DEU","Germany","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,71,,
+"GRC","Greece","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,43,,
+"HUN","Hungary","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,60,,
+"ISL","Iceland","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,83,,
+"IRL","Ireland","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,60,,
+"ITA","Italy","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,48,,
+"LUX","Luxembourg","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,60,,
+"NLD","Netherlands","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,70,,
+"NOR","Norway","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,73,,
+"POL","Poland","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,58,,
+"PRT","Portugal","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,62,,
+"SVK","Slovak Republic","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,58,,
+"ESP","Spain","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,55,,
+"SWE","Sweden","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,75,,
+"CHE","Switzerland","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,75,,
+"GBR","United Kingdom","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,70,,
+"EST","Estonia","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,68,,
+"LVA","Latvia","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,68,,
+"SVN","Slovenia","JE_EMPL","Employment rate","L","Value","WMN","Women","PC","Percentage","0","Units",,,63,,
+"AUT","Austria","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,86,"E","Estimated value"
+"BEL","Belgium","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"CZE","Czech Republic","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,86,"E","Estimated value"
+"DNK","Denmark","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,86,"E","Estimated value"
+"FIN","Finland","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,83,"E","Estimated value"
+"FRA","France","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"DEU","Germany","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"GRC","Greece","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,70,"E","Estimated value"
+"HUN","Hungary","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"ISL","Iceland","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,94,"E","Estimated value"
+"IRL","Ireland","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,83,"E","Estimated value"
+"ITA","Italy","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,80,"E","Estimated value"
+"LUX","Luxembourg","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,86,"E","Estimated value"
+"NLD","Netherlands","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"NOR","Norway","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,89,"E","Estimated value"
+"POL","Poland","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"PRT","Portugal","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"SVK","Slovak Republic","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,81,"E","Estimated value"
+"ESP","Spain","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,80,"E","Estimated value"
+"SWE","Sweden","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,90,"E","Estimated value"
+"CHE","Switzerland","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"GBR","United Kingdom","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"EST","Estonia","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"LVA","Latvia","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,87,"E","Estimated value"
+"SVN","Slovenia","JE_EMPL","Employment rate","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"AUT","Austria","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,54,"E","Estimated value"
+"BEL","Belgium","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,46,"E","Estimated value"
+"CZE","Czech Republic","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,45,"E","Estimated value"
+"DNK","Denmark","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,63,"E","Estimated value"
+"FIN","Finland","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,54,"E","Estimated value"
+"FRA","France","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,51,"E","Estimated value"
+"DEU","Germany","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,59,"E","Estimated value"
+"GRC","Greece","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,48,"E","Estimated value"
+"HUN","Hungary","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,52,"E","Estimated value"
+"ISL","Iceland","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,79,"E","Estimated value"
+"IRL","Ireland","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,52,"E","Estimated value"
+"ITA","Italy","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,51,"E","Estimated value"
+"LUX","Luxembourg","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,60,"E","Estimated value"
+"NLD","Netherlands","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"NOR","Norway","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,62,"E","Estimated value"
+"POL","Poland","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,41,"E","Estimated value"
+"PRT","Portugal","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,65,"E","Estimated value"
+"SVK","Slovak Republic","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,38,"E","Estimated value"
+"ESP","Spain","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,54,"E","Estimated value"
+"SWE","Sweden","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,66,"E","Estimated value"
+"CHE","Switzerland","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,68,"E","Estimated value"
+"GBR","United Kingdom","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,62,"E","Estimated value"
+"EST","Estonia","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"LVA","Latvia","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,59,"E","Estimated value"
+"SVN","Slovenia","JE_EMPL","Employment rate","L","Value","LW","Low","PC","Percentage","0","Units",,,46,"E","Estimated value"

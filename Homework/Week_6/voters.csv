@@ -1,0 +1,126 @@
+﻿"LOCATION","Country","INDICATOR","Indicator","MEASURE","Measure","INEQUALITY","Inequality","Unit Code","Unit","PowerCode Code","PowerCode","Reference Period Code","Reference Period","Value","Flag Codes","Flags"
+"AUT","Austria","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,75,,
+"BEL","Belgium","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,89,,
+"CZE","Czech Republic","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,59,,
+"DNK","Denmark","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,86,,
+"FIN","Finland","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,69,,
+"FRA","France","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,75,,
+"DEU","Germany","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,72,,
+"GRC","Greece","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,64,,
+"HUN","Hungary","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,62,,
+"ISL","Iceland","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,79,,
+"IRL","Ireland","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,65,,
+"ITA","Italy","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,75,,
+"LUX","Luxembourg","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,91,,
+"NLD","Netherlands","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,82,,
+"NOR","Norway","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,78,,
+"POL","Poland","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,55,,
+"PRT","Portugal","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,56,,
+"SVK","Slovak Republic","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,60,,
+"ESP","Spain","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,70,,
+"SWE","Sweden","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,86,,
+"CHE","Switzerland","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,49,,
+"GBR","United Kingdom","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,69,,
+"EST","Estonia","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,64,,
+"LVA","Latvia","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,59,,
+"SVN","Slovenia","CG_VOTO","Voter turnout","L","Value","TOT","Total","PC","Percentage","0","Units",,,52,,
+"AUT","Austria","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,75,"E","Estimated value"
+"BEL","Belgium","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,91,"E","Estimated value"
+"CZE","Czech Republic","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,59,"E","Estimated value"
+"DNK","Denmark","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,86,"E","Estimated value"
+"FIN","Finland","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,70,"E","Estimated value"
+"FRA","France","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,74,"E","Estimated value"
+"DEU","Germany","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,74,"E","Estimated value"
+"GRC","Greece","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,63,"E","Estimated value"
+"HUN","Hungary","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,63,"E","Estimated value"
+"ISL","Iceland","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,80,"E","Estimated value"
+"IRL","Ireland","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,65,"E","Estimated value"
+"ITA","Italy","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,77,"E","Estimated value"
+"LUX","Luxembourg","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,92,"E","Estimated value"
+"NLD","Netherlands","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,81,"E","Estimated value"
+"NOR","Norway","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,78,"E","Estimated value"
+"POL","Poland","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,57,"E","Estimated value"
+"PRT","Portugal","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,56,"E","Estimated value"
+"SVK","Slovak Republic","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,60,"E","Estimated value"
+"ESP","Spain","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,70,"E","Estimated value"
+"SWE","Sweden","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,84,"E","Estimated value"
+"CHE","Switzerland","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,51,"E","Estimated value"
+"GBR","United Kingdom","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,65,"E","Estimated value"
+"EST","Estonia","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"LVA","Latvia","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,56,"E","Estimated value"
+"SVN","Slovenia","CG_VOTO","Voter turnout","L","Value","MN","Men","PC","Percentage","0","Units",,,52,"E","Estimated value"
+"AUT","Austria","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,74,"E","Estimated value"
+"BEL","Belgium","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"CZE","Czech Republic","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,60,"E","Estimated value"
+"DNK","Denmark","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,86,"E","Estimated value"
+"FIN","Finland","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,68,"E","Estimated value"
+"FRA","France","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,75,"E","Estimated value"
+"DEU","Germany","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,69,"E","Estimated value"
+"GRC","Greece","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,64,"E","Estimated value"
+"HUN","Hungary","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"ISL","Iceland","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,78,"E","Estimated value"
+"IRL","Ireland","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,65,"E","Estimated value"
+"ITA","Italy","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,73,"E","Estimated value"
+"LUX","Luxembourg","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,91,"E","Estimated value"
+"NLD","Netherlands","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,83,"E","Estimated value"
+"NOR","Norway","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,78,"E","Estimated value"
+"POL","Poland","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,54,"E","Estimated value"
+"PRT","Portugal","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,55,"E","Estimated value"
+"SVK","Slovak Republic","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,60,"E","Estimated value"
+"ESP","Spain","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,69,"E","Estimated value"
+"SWE","Sweden","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"CHE","Switzerland","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,46,"E","Estimated value"
+"GBR","United Kingdom","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,72,"E","Estimated value"
+"EST","Estonia","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,67,"E","Estimated value"
+"LVA","Latvia","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"SVN","Slovenia","CG_VOTO","Voter turnout","L","Value","WMN","Women","PC","Percentage","0","Units",,,52,"E","Estimated value"
+"AUT","Austria","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,75,"E","Estimated value"
+"BEL","Belgium","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,94,"E","Estimated value"
+"CZE","Czech Republic","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,68,"E","Estimated value"
+"DNK","Denmark","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"FIN","Finland","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,74,"E","Estimated value"
+"FRA","France","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,78,"E","Estimated value"
+"DEU","Germany","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,77,"E","Estimated value"
+"GRC","Greece","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,67,"E","Estimated value"
+"HUN","Hungary","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,70,"E","Estimated value"
+"ISL","Iceland","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,87,"E","Estimated value"
+"IRL","Ireland","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,69,"E","Estimated value"
+"ITA","Italy","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"LUX","Luxembourg","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,96,"E","Estimated value"
+"NLD","Netherlands","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,92,"E","Estimated value"
+"NOR","Norway","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,85,"E","Estimated value"
+"POL","Poland","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,66,"E","Estimated value"
+"PRT","Portugal","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"SVK","Slovak Republic","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,65,"E","Estimated value"
+"ESP","Spain","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,77,"E","Estimated value"
+"SWE","Sweden","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,90,"E","Estimated value"
+"CHE","Switzerland","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,57,"E","Estimated value"
+"GBR","United Kingdom","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,77,"E","Estimated value"
+"EST","Estonia","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,69,"E","Estimated value"
+"LVA","Latvia","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,64,"E","Estimated value"
+"SVN","Slovenia","CG_VOTO","Voter turnout","L","Value","HGH","High","PC","Percentage","0","Units",,,59,"E","Estimated value"
+"AUT","Austria","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,75,"E","Estimated value"
+"BEL","Belgium","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,88,"E","Estimated value"
+"CZE","Czech Republic","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,49,"E","Estimated value"
+"DNK","Denmark","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,84,"E","Estimated value"
+"FIN","Finland","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"FRA","France","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,70,"E","Estimated value"
+"DEU","Germany","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,58,"E","Estimated value"
+"GRC","Greece","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,55,"E","Estimated value"
+"HUN","Hungary","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,51,"E","Estimated value"
+"ISL","Iceland","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,75,"E","Estimated value"
+"IRL","Ireland","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"ITA","Italy","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,73,"E","Estimated value"
+"LUX","Luxembourg","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,91,"E","Estimated value"
+"NLD","Netherlands","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,71,"E","Estimated value"
+"NOR","Norway","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,72,"E","Estimated value"
+"POL","Poland","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,43,"E","Estimated value"
+"PRT","Portugal","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,54,"E","Estimated value"
+"SVK","Slovak Republic","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,61,"E","Estimated value"
+"ESP","Spain","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,67,"E","Estimated value"
+"SWE","Sweden","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,84,"E","Estimated value"
+"CHE","Switzerland","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,41,"E","Estimated value"
+"GBR","United Kingdom","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,52,"E","Estimated value"
+"EST","Estonia","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,56,"E","Estimated value"
+"LVA","Latvia","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,53,"E","Estimated value"
+"SVN","Slovenia","CG_VOTO","Voter turnout","L","Value","LW","Low","PC","Percentage","0","Units",,,49,"E","Estimated value"
