@@ -31,7 +31,6 @@ df_data['country'] = df_data.index
 df_data.reset_index(level=0, inplace=True)
 
 # Convert the dataframe to a JSON
-#df_data.set_index('Country', inplace=True)
 df_data.to_json(OUTPUT, orient='index')
 
 print(df_data)

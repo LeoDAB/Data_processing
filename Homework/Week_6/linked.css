@@ -12,17 +12,22 @@
             r: 4.5px
 }
 
+.point:hover {
+            fill: red;
+            r: 12;
+}
+
 .toolTip {
             position: absolute;
             display: none;
             min-width: 80px;
             height: auto;
             background: none repeat scroll 0 0 #ffffff;
-            border: 2px solid #FF7A33;
+            border: 2px solid #d8b365;
             padding: 5px;
             text-align: center;
         }
 
-.point:hover {
-            fill: pink;
+.block:hover {
+                opacity: 0.5;
 }
