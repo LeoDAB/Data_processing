@@ -5,3 +5,5 @@ Github pages
 Week 4: https://LeoDAB.github.io/Data_processing/Homework/Week_4/index.html
 
 Week 5: https://LeoDAB.github.io/Data_processing/Homework/Week_5/scatter.html
+
+Week 6: https://LeoDAB.github.io/Data_processing/Homework/Week_6/linked.html
